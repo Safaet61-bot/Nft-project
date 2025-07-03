@@ -1,0 +1,84 @@
+/* Card container */
+.card {
+  width: 244px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; /* Ensure cards are displayed inline */
+  margin-right: 20px; /* Space between cards */
+}
+
+/* Character image */
+.character-img {
+  width: 200px;
+  margin: 0 auto -40px;
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Card box */
+.card-box {
+  background: linear-gradient(to bottom, #222, #111);
+  border: 1px solid;
+  border-radius: 0.5px;
+  padding: 50px 15px 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 2;
+  height: 270px;
+  opacity: 80%;
+  transition: transform 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Hover effect - increase the size of the image and card */
+.card:hover .character-img {
+  transform: scale(1.1); /* Default 10% increase for all */
+}
+
+/* Sequential scaling for each card's image using nth-child */
+.card:nth-child(1):hover .character-img {
+  transform: scale(1.05); /* 5% increase for the first card */
+}
+
+.card:nth-child(2):hover .character-img {
+  transform: scale(1.1); /* 10% increase for the second card */
+}
+
+.card:nth-child(3):hover .character-img {
+  transform: scale(1.15); /* 15% increase for the third card */
+}
+
+.card:nth-child(4):hover .character-img {
+  transform: scale(1.2); /* 20% increase for the fourth card */
+}
+
+/* Hover effect for card box */
+.card:hover .card-box {
+  transform: scale(1.05); /* Slightly increase card box size */
+  padding: 60px 20px 30px; /* Increase padding for better visual balance */
+  background-color: #FFD700; /* Gold background on hover */
+}
+
+/* Change background color of the chain and apply golden background */
+.card:hover .chain {
+  background-color: #FFD700; /* Change background to gold for chain */
+}
+
+/* Chain section */
+.chain {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.chain img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.chain span {
+  font-size: 12px;
+}

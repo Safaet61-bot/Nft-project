@@ -1,0 +1,106 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+
+.footerright img {
+    width: 100%;
+}
+
+.katanalogo {
+    padding-top: 30px;
+}
+
+.katanalogo img {
+    width: 100px;
+}
+
+.footercontainer {
+    width: 100%;
+    /* margin top dite hbe */
+    margin: 0 auto;
+}
+
+.ftotal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* left footer style */
+.footerleft {
+    display: flex;
+}
+
+.dummytext {
+    padding: 20px;
+}
+
+.downtext {
+    margin-top: 30px;
+    color: #747474;
+}
+
+.uptext {
+    color: #747474;
+}
+
+/* for about */
+.about {
+    padding: 10px;
+}
+
+.aboutul>a {
+    color: #747474;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.abouthead {
+    font-size: 1.5rem;
+}
+
+/* for support */
+.support {
+    padding: 10px;
+}
+
+.supportul>a {
+    color: #747474;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.supporthead {
+    font-size: 1.5rem;
+}
+
+/* for icon */
+.icons{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+}
+.icons span .i{
+    font-size: 1.5rem;
+    color: #F8C306CC;
+}
+.copyright{
+    margin-top: 20px;
+}
+.copyright p{
+    color: #747474;
+    font-size: 0.9rem;
+}
